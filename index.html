@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currículo - Ansley</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card: #161b22;
+      --text: #e6edf3;
+      --accent: #3b82f6;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeIn 1.2s ease;
+    }
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid var(--accent);
+      box-shadow: 0 0 20px #000;
+    }
+    h1 { margin-top: 20px; font-size: 36px; }
+    main {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      animation: slideUp 1.3s ease;
+    }
+    section {
+      background: var(--card);
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 12px #00000055;
+      animation: fadeIn 1.2s ease;
+    }
+    h2 { border-bottom: 1px solid #333; padding-bottom: 8px; }
+    .tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .tools img {
+      width: 65px;
+      transition: transform .3s;
+    }
+    .tools img:hover { transform: scale(1.15); }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideUp { from { opacity: 0; transform: translateY(20px);} to { opacity: 1; transform: translateY(0);} }
+  </style>
+</head>
+<body>
+  <nav style="position:fixed;top:0;left:0;width:100%;background:#111827cc;backdrop-filter:blur(6px);padding:15px 0;z-index:1000;display:flex;justify-content:center;gap:40px;">
+    <a href="#sobre" style="color:#e6edf3;text-decoration:none;font-weight:bold;">Sobre</a>
+    <a href="#skills" style="color:#e6edf3;text-decoration:none;font-weight:bold;"><section id="skills"><h2>Ferramentas</a>
+    <a href="#exp" style="color:#e6edf3;text-decoration:none;font-weight:bold;">Experiência</a>
+    <a href="#formacao" style="color:#e6edf3;text-decoration:none;font-weight:bold;">Formação</a>
+    <a href="#download" style="color:#e6edf3;text-decoration:none;font-weight:bold;">Currículo</a>
+    <button id="toggleTheme" style="background:none;border:2px solid #3b82f6;color:#3b82f6;padding:6px 14px;border-radius:8px;cursor:pointer;">Tema</button>
+  </nav>
+  <header>
+    <img src="https://media.licdn.com/dms/image/v2/D4D03AQEGWfV1k_CrKg/profile-displayphoto-shrink_200_200/B4DZTSIzH1G4Ac-/0/1738692310154?e=1765411200&v=beta&t=Yow6YCW4oXpQw736VdP8wQxMFzDyDRb_a_GNSekOw-U" />
+    <h1>Ansley — SRE / DevOps</h1>
+    <p>Infraestrutura • Automação • Observabilidade • Cloud</p>
+  </header>
+
+  <main style="padding-top:80px;">
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>SRE/DevOps focado na operação estável de clusters Linux, automação de processos críticos e gestão de containers. Experiência em observabilidade (Grafana, Loki, Promtail, Zabbix), pipelines CI/CD com Jenkins, atuação em Azure e rotinas com Oracle e PostgreSQL.</p>
+    </section>
+
+    <section>
+      <h2>Ferramentas</h2>
+      <div class="tools">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/grafana/grafana-original.svg" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jenkins/jenkins-original.svg" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/googlecloud/googlecloud-original.svg" />
+      </div>
+    </section>
+
+    <section>
+      <h2>Descrição das Ferramentas</h2>
+      <ul>
+        <li><strong>Docker e Docker Compose:</strong> Containerização e ambientes reprodutíveis.</li>
+        <li><strong>Linux:</strong> Administração de servidores e automação avançada.</li>
+        <li><strong>Azure:</strong> Operação de serviços cloud.</li>
+        <li><strong>Grafana:</strong> Dashboards e métricas.</li>
+        <li><strong>Loki e Promtail:</strong> Centralização e ingestão de logs.</li>
+        <li><strong>Zabbix:</strong> Monitoramento de infraestrutura.</li>
+        <li><strong>Jenkins:</strong> Pipelines CI/CD.</li>
+        <li><strong>Git:</strong> Versionamento.</li>
+        <li><strong>Kubernetes:</strong> Orquestração de containers.</li>
+        <li><strong>PostgreSQL:</strong> Administração e tuning.</li>
+        <li><strong>Oracle:</strong> Rotinas e recuperação de bancos.</li>
+        <li><strong>AWS e GCP:</strong> Operação multi-cloud.</li>
+        <li><strong>Shell Script:</strong> Automação crítica.</li>
+      </ul>
+    </section>
+      <section>
+      <h2>Resumo Profissional</h2>
+      <p>Profissional de SRE/DevOps com experiência sólida em ambientes cloud (AWS, Azure e GCP), automação, observabilidade e containers. Atuação em clusters Linux, Docker e Kubernetes, CI/CD com GitLab/Jenkins e monitoramento com Grafana, Loki, Promtail e Zabbix. Focado em confiabilidade, melhoria contínua e redução de incidentes, com experiência em bancos Oracle e PostgreSQL e suporte a times de desenvolvimento em ambientes críticos.</p>
+    </section>
+
+    <section>
+      <h2><section id="exp"><h2>Experiência Profissional (Timeline)</h2>
+      <div class="timeline" style="border-left:3px solid #3b82f6;margin-left:20px;padding-left:20px;">
+
+        <div class="card-exp" style="margin-bottom:30px;padding:20px;background:#161b22;border-radius:10px;transition:.3s;">
+          <h3>📌 Aliare — Analista de Configuração (fev/2023 – atual)</h3>
+          <p>Gerenciamento de servidores em cluster, containers, observabilidade e automação.</p>
+        </div>
+
+        <div class="card-exp" style="margin-bottom:30px;padding:20px;background:#161b22;border-radius:10px;transition:.3s;">
+          <h3>📌 O2B — Analista Cloud Júnior (abr/2020 – out/2022)</h3>
+          <p>Atuação como SRE em ambientes cloud AWS/GCP, automação e monitoramento.</p>
+        </div>
+
+        <div class="card-exp" style="margin-bottom:30px;padding:20px;background:#161b22;border-radius:10px;transition:.3s;">
+          <h3>📌 Enjin Honda Automóveis — Gerente de TI (ago/2019 – mar/2020)</h3>
+          <p>Gestão de TI, suporte técnico e infraestrutura.</p>
+        </div>
+
+        <div class="card-exp" style="margin-bottom:30px;padding:20px;background:#161b22;border-radius:10px;transition:.3s;">
+          <h3>📌 BRASCLOUD — Administrativo de Sistemas I (mai/2019 – ago/2019)</h3>
+          <p>Administração de sistemas e suporte.</p>
+        </div>
+
+        <div class="card-exp" style="margin-bottom:30px;padding:20px;background:#161b22;border-radius:10px;transition:.3s;">
+          <h3>📌 Zeni Motors — Assistente de TI (jul/2017 – abr/2019)</h3>
+          <p>Suporte técnico e manutenção.</p>
+        </div>
+
+        <div class="card-exp" style="margin-bottom:30px;padding:20px;background:#161b22;border-radius:10px;transition:.3s;">
+          <h3>📌 Copyvic — Auxiliar Técnico (out/2015 – jun/2016)</h3>
+          <p>Manutenção de copiadoras e suporte básico.</p>
+        </div>
+
+        <div class="card-exp" style="margin-bottom:30px;padding:20px;background:#161b22;border-radius:10px;transition:.3s;">
+          <h3>📌 Mascarello Ônibus — Analista de Suporte (abr/2015 – jul/2015)</h3>
+          <p>Suporte técnico e manutenção de equipamentos.</p>
+        </div>
+
+      </div></section></h2>
+      <h3>Aliare — Analista de Configuração (fev/2023 – atual)</h3>
+      <p>Atuação no gerenciamento de servidores em cluster com foco em containers (Docker/Docker Compose). Suporte aos times de Desenvolvimento e Teste em demandas de Linux, infraestrutura e automação. Monitoramento e observabilidade com Grafana, Promtail, Loki e Zabbix. Configuração e restauração de bancos Oracle e PostgreSQL, além de atividades cloud na Azure. Desenvolvimento de scripts Shell e ajustes em pipelines CI/CD usando Jenkins.</p>
+
+      <h3>O2B — Analista Cloud Júnior (abr/2020 – out/2022)</h3>
+      <p>Atuação como SRE em ambientes cloud, com instalação, configuração e monitoramento de servidores. Observabilidade com Grafana e Zabbix. Gerenciamento de instâncias em AWS e GCP. Implantação de máquinas, configuração de alertas e administração de bancos sob demanda. Automação e versionamento usando Git, Docker, Kubernetes e orquestração via Rancher.</p>
+
+      <h3>Enjin Honda Automóveis — Gerente de TI (ago/2019 – mar/2020)</h3>
+      <p>Responsável pela gestão de TI, incluindo suporte técnico, infraestrutura de redes e servidores. Manutenção preventiva e corretiva, monitoramento de sistemas e ajustes em bancos de dados. Organização de demandas e acompanhamento de chamados.</p>
+
+      <h3>BRASCLOUD — Administrativo de Sistemas I (mai/2019 – ago/2019)</h3>
+      <p>Administração de sistemas e infraestrutura de rede, com foco em manutenção e configuração de servidores e equipamentos. Suporte a usuários e execução de rotinas de manutenção preventiva e resolução de incidentes.</p>
+
+      <h3>Zeni Motors — Assistente de TI (jul/2017 – abr/2019)</h3>
+      <p>Atuação em suporte técnico e manutenção de estações de trabalho. Configuração de computadores, gerenciamento do parque de máquinas e atendimento a usuários. Aprendizado e aplicação de Linux, Windows, FTP e servidor Apache.</p>
+
+      <h3>Copyvic — Auxiliar Técnico (out/2015 – jun/2016)</h3>
+      <p>Manutenção e suporte técnico de impressoras e copiadoras. Diagnóstico, reparos e configuração de equipamentos. Suporte básico de redes e sistemas operacionais, com foco em funcionamento de ambientes internos.</p>
+
+      <h3>Mascarello Carrocerias e Ônibus — Analista de Suporte de TI (abr/2015 – jul/2015)</h3>
+      <p>Manutenção de equipamentos, atendimento a usuários e configuração de computadores e impressoras. Suporte técnico presencial e resolução de problemas do dia a dia.</p>
+    </section>
+
+    <section>
+      <h2><section id="formacao"><h2>Formação Acadêmica</h2>
+      <h3>Universidade Tecnológica Federal do Paraná — Pós-Graduação em Redes de Computadores (2019–2020)</h3>
+      <p>Estudo de modelos OSI/TCP-IP, protocolos (TCP, UDP, IP, HTTP, FTP), topologias de rede, conectividade entre tecnologias, convergência entre telecomunicações e dados, IoT e interoperabilidade de sistemas.</p>
+
+      <h3>Centro Universitário FAG — Bacharelado em Sistemas de Informação (2014–2018)</h3>
+      <p>Desenvolvimento de software, gestão de projetos, análise de dados, segurança da informação, administração de redes e infraestrutura, auditoria de TI e planejamento tecnológico.</p>
+    </section>
+
+<section id="download">
+      <h2>Download do Currículo</h2>
+      <a href="Curriculo_Ansley_Donizeti_Gonçalves.pdf" download style="background:#3b82f6;color:white;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:bold;">⬇️ Baixar Currículo em PDF</a>
+    </section>
+
+</main>
+
+<script>
+  const btn = document.getElementById('toggleTheme');
+  btn.onclick = () => {
+    document.body.classList.toggle('light');
+  };
+</script>
+</body>
+</html>
