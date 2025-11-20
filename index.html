@@ -243,6 +243,51 @@
       flex: 1;
     }
     
+    .recommendation-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      background: linear-gradient(45deg, #22c55e, #3b82f6);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .recommendation-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
+    }
+    
+    .recommendation-btn.disabled {
+      background: rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.4);
+      cursor: not-allowed;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .recommendation-btn.disabled:hover {
+      transform: none;
+      box-shadow: none;
+    }
+    
+    .recommendation-icon {
+      width: 16px;
+      height: 16px;
+    }
+    
+    .company-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    
     /* Botão de download */
     #download a {
       background: linear-gradient(45deg, #22c55e, #3b82f6);
@@ -326,6 +371,11 @@
       .contact-link {
         min-width: 200px;
       }
+      
+      .company-actions {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
   </style>
 </head>
@@ -382,6 +432,7 @@
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git" />
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" />
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="Oracle" />
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" />
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud" />
       </div>
@@ -422,6 +473,15 @@
             <h3>Aliare — Analista de Configuração (fev/2023 – atual)</h3>
           </div>
           <p>Gerenciamento de servidores em cluster, containers, observabilidade e automação.</p>
+          <div class="company-actions">
+            <button class="recommendation-btn disabled">
+              <svg class="recommendation-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+              </svg>
+              Carta de Recomendação
+            </button>
+            <span style="font-size: 0.8rem; opacity: 0.6;">(Em breve)</span>
+          </div>
         </div>
 
         <div class="card-exp">
@@ -432,6 +492,14 @@
             <h3>Security First — Analista Cloud Junior (set/2022 – fev/2023)</h3>
           </div>
           <p>Atuação como SRE em ambientes cloud, automação e monitoramento.</p>
+          <div class="company-actions">
+            <a href="Carta de Recomendação SecurituFirst - Ansley.pdf" download class="recommendation-btn">
+              <svg class="recommendation-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+              </svg>
+              Baixar Carta
+            </a>
+          </div>
         </div>
 
         <div class="card-exp">
@@ -442,6 +510,14 @@
             <h3>O2B — Analista Cloud Júnior (abr/2020 – set/2022)</h3>
           </div>
           <p>Atuação como SRE em ambientes cloud AWS/GCP, automação e monitoramento.</p>
+          <div class="company-actions">
+            <a href="Carta de Recomendaco O2B - Ansley.pdf" download class="recommendation-btn">
+              <svg class="recommendation-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+              </svg>
+              Baixar Carta
+            </a>
+          </div>
         </div>
 
         <div class="card-exp">
@@ -452,6 +528,14 @@
             <h3>Enjin Honda Automóveis — Gerente de TI (ago/2019 – mar/2020)</h3>
           </div>
           <p>Gestão de TI, suporte técnico e infraestrutura.</p>
+          <div class="company-actions">
+            <a href="Carta de Recomendação Enjin Honda - Ansley.pdf" download class="recommendation-btn">
+              <svg class="recommendation-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+              </svg>
+              Baixar Carta
+            </a>
+          </div>
         </div>
 
         <div class="card-exp">
@@ -462,6 +546,14 @@
             <h3>BRASCLOUD — Administrativo de Sistemas I (mai/2019 – ago/2019)</h3>
           </div>
           <p>Administração de sistemas e suporte.</p>
+          <div class="company-actions">
+            <a href="Carta de Recomendação BrasCloud - Ansley.pdf" download class="recommendation-btn">
+              <svg class="recommendation-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+              </svg>
+              Baixar Carta
+            </a>
+          </div>
         </div>
 
         <div class="card-exp">
@@ -469,9 +561,17 @@
             <a href="https://zenimotors.com/" target="_blank">
               <img src="Zeni-Motors-Logo.png" alt="Zeni Motors" class="company-logo">
             </a>
-            <h3>Zeni Motors — Assistente de TI (jul/2017 – abr/2019)</h3>
+            <h3>Zeni Motors Toyota — Assistente de TI (jul/2017 – abr/2019)</h3>
           </div>
           <p>Suporte técnico e manutenção.</p>
+          <div class="company-actions">
+            <a href="Carta de Recomendação Toyota - Ansley.pdf" download class="recommendation-btn">
+              <svg class="recommendation-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+              </svg>
+              Baixar Carta
+            </a>
+          </div>
         </div>
 
         <div class="card-exp">
@@ -482,6 +582,14 @@
             <h3>Copyvic — Auxiliar Técnico (out/2015 – jun/2016)</h3>
           </div>
           <p>Manutenção de copiadoras e suporte básico.</p>
+          <div class="company-actions">
+            <a href="Carta de Recomendação Copyvic - Ansley.pdf" download class="recommendation-btn">
+              <svg class="recommendation-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+              </svg>
+              Baixar Carta
+            </a>
+          </div>
         </div>
 
         <div class="card-exp">
@@ -492,6 +600,14 @@
             <h3>Mascarello Ônibus — Analista de Suporte (abr/2015 – jul/2015)</h3>
           </div>
           <p>Suporte técnico e manutenção de equipamentos.</p>
+          <div class="company-actions">
+            <a href="Carta de Recomendação Marcarello - Ansley.pdf" download class="recommendation-btn">
+              <svg class="recommendation-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+              </svg>
+              Baixar Carta
+            </a>
+          </div>
         </div>
       </div>
     </section>
