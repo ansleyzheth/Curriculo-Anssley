@@ -575,6 +575,24 @@
       .photo-container a:hover img {
         box-shadow: 0 0 20px rgba(10, 102, 194, 0.6);
       }
+      .education-item {
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .education-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+      .education-item h3 {
+        color: var(--neon);
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+      }
+      .education-item p {
+        margin-bottom: 15px;
+        opacity: 0.9;
+      }
     }
   </style>
 </head>
@@ -1005,20 +1023,40 @@ Prestava suporte técnico presencial, garantindo o funcionamento adequado dos eq
       </div>
     </section>
 
-    <section id="formacao">
-      <h2>Formação Acadêmica</h2>
-      <h3>UTFPR — Pós-Graduação em Redes de Computadores (2019–2020)</h3>
-      <p>Estudo de modelos OSI/TCP-IP, protocolos (TCP, UDP, IP, HTTP, FTP), topologias de rede, conectividade entre tecnologias, convergência entre telecomunicações e dados, IoT e interoperabilidade de sistemas.</p>
-      <a href="Certificado-UTFPR-ANSLEY.pdf" download>⬇️ Baixar Cetificado de conclusão UTPR</a>
-      
-      <h3>Centro Universitário FAG — Bacharelado em Sistemas de Informação (2014–2018)</h3>
-      <p>Desenvolvimento de software, gestão de projetos, análise de dados, segurança da informação, administração de redes e infraestrutura, auditoria de TI e planejamento tecnológico.</p>
-      <a href="Certificado-FAG-Ansley.pdf" download>⬇️ Baixar Cetificado de conclusão FAG</a>
+<section id="formacao">
+  <h2>Formação Acadêmica</h2>
+  
+  <div class="education-item">
+    <h3>UTFPR — Pós-Graduação em Redes de Computadores (2019–2020)</h3>
+    <p>Estudo de modelos OSI/TCP-IP, protocolos (TCP, UDP, IP, HTTP, FTP), topologias de rede, conectividade entre tecnologias, convergência entre telecomunicações e dados, IoT e interoperabilidade de sistemas.</p>
+    <div class="company-actions">
+      <a href="Certificado-UTFPR-ANSLEY.pdf" download class="recommendation-btn">
+        <svg class="recommendation-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+        </svg>
+        Baixar Certificado de Conclusão UTFPR
+      </a>
+    </div>
+  </div>
+  
+  <div class="education-item">
+    <h3>Centro Universitário FAG — Bacharelado em Sistemas de Informação (2014–2018)</h3>
+    <p>Desenvolvimento de software, gestão de projetos, análise de dados, segurança da informação, administração de redes e infraestrutura, auditoria de TI e planejamento tecnológico.</p>
+    <div class="company-actions">
+      <a href="Certificado-FAG-Ansley.pdf" download class="recommendation-btn">
+        <svg class="recommendation-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+        </svg>
+        Baixar Certificado de Conclusão FAG
+      </a>
+    </div>
+  </div>
 
-
-      <h3>CNA Idiomas — Inglês (01 ano - até Intermediate 1)</h3>
-      <p>Formação em língua inglesa com desenvolvimento das quatro habilidades linguísticas: listening, speaking, reading e writing.</p>
-    </section>
+  <div class="education-item">
+    <h3>CNA Idiomas — Inglês (01 ano - até Intermediate 1)</h3>
+    <p>Formação em língua inglesa com desenvolvimento das quatro habilidades linguísticas: listening, speaking, reading e writing.</p>
+  </div>
+</section>
 
 
   </main>
